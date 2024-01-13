@@ -3,28 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>The Flag of Laos</title>
+    <title>Product Landing Page</title>
   </head>
   <body>
     <header id="header">
-      <image id="header-img"><!--logo--></image>
+      <image
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+      ></image>
       <nav id="nav-bar">
-        <a href="" id="nav-link"></a><a href="" id="nav-link"></a
-        ><a href="" id="nav-link"></a>
+        <a href="Features" id="nav-link">Features</a
+        ><a href="How It Works" id="nav-link">How It Works</a
+        ><a href="Pricing" id="nav-link">Pricing</a>
       </nav>
     </header>
     <main>
       <form action="" id="form">
+        <h1>Handcrafted, home-made masterpieces</h1>
         <input
           type="email"
           name="email"
           id="email"
-          placeholder="Enter your email"
-          pattern="."
+          placeholder="Enter your email address"
+          required
+        />
+        <input
+          type="button"
+          value="get started"
+          id="submit"
+          href="https://www.freecodecamp.com/email-submit"
         />
       </form>
-      <iframe src="" frameborder="0" id="video"></iframe>
+      <div class="hero" id="Features">
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-fire"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"
+            />
+          </svg>
+          Premium Materials
+          <p class="article__text">
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </article>
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-truck"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+            /></svg
+          >Fast Shipping
+          <p class="article__text">
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </article>
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-battery-full"
+            viewBox="0 0 16 16"
+          >
+            <path d="M2 6h10v4H2z" />
+            <path
+              d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8"
+            /></svg
+          >Quality Assurance
+          <p class="article__text">
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </article>
+      </div>
+      <div class="video__container" id="How It Works">
+        <iframe
+          src="https://youtu.be/y8Yv4pnO7qc"
+          frameborder="0"
+          id="video"
+        ></iframe>
+      </div>
+      <div class="prices-row__container" id="Pricing">
+        <div class="prices-row tenor-trombone">
+          <h2>TENOR TROMBONE</h2>
+          <p class="price">€600</p>
+          <p class="price">Lorem ipsum.</p>
+          <p class="price">Lorem ipsum.</p>
+          <p class="price">Lorem ipsum dolor.</p>
+          <p class="price">Lorem ipsum.</p>
+          <button class="prices-button" value="">Select</button>
+        </div>
+        <div class="prices-row base-trombone">
+          <h2>BASS TROMBONE</h2>
+          <p class="price">€600</p>
+          <p class="price">Lorem ipsum.</p>
+          <p class="price">Lorem ipsum.</p>
+          <p class="price">Lorem ipsum dolor.</p>
+          <p class="price">Lorem ipsum.</p>
+          <button class="prices-button" value="">Select</button>
+        </div>
+        <div class="prices-row valve-trombone">
+          <h2>VALVE TROMBONE</h2>
+          <p class="price">€600</p>
+          <p class="price">Plays similar to a Trumpet</p>
+          <p class="price">Great for Jazz Bands</p>
+          <p class="price">Lorem ipsum dolor.</p>
+          <p class="price">Lorem ipsum.</p>
+          <button class="prices button" value="">Select</button>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="footer__row">
+        <a href="">Privacy</a><a href="">Terms</a><a href="">Contact</a>
+      </div>
+      <small class="small">Copyright 2016, Original Trombones</small>
+    </footer>
   </body>
 </html>
