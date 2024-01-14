@@ -6,68 +6,105 @@
 
 body {
     padding: 0;
-    margin: 0;
-    background-color: lightyellow;
+    margin: 2rem;
+    background-color: #E8F1F2;
     border: none;
     font-family: 'Roboto', sans-serif;
 }
 
 #header-img {
     object-fit: contain;
-    width: 22rem;
+    width: 30rem;
+    margin: 0 auto 3rem -3rem;
 }
 
-#nav-bar {
+#nav-bar__1,#nav-bar__2 {
     display: flex;
     gap: 1rem;
     font-size: 20px;
 }
 
-#nav-bar a {
+#nav-bar__1, #title, #nav-bar__2 {
+ margin-bottom: 5rem;
+ font-size: 2rem;
+}
+
+#nav-bar__1 a, #nav-bar__2 a {
     color: black;
     text-decoration: none;
 }
 
-#nav-bar a:hover {
-    color: rgb(140, 50, 0);
+#nav-bar__1 a:hover, #nav-bar__2 a:hover {
+    color: #7A9E7E;
 }
 
-#header {
-    display: flex;
+#nav-bar__1 {
+  display: none;
 }
-
-#header-img {}
-
-#submit:hover {
-    cursor: pointer;
-    border: none;
+#form {
+  font-size: 2rem;
 }
 
 #submit:active {
+  background-color: wheat;
+  border: 1px solid;
+}
+
+button {
+  border: 1px solid ;
+}
+
+button:hover {
+    cursor: pointer;
+    
+}
+
+button:active {
     background-color: wheat;
-    border: none;
+    
 }
 
 .hero {
+  margin-top: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 article {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .article__text {
     font-size: 0.5em;
+    margin-left: 4em;
 }
 
-.prices-row__container {
+.article__title {
+  margin-left: 1.5rem;
+  
+}
+
+iframe {
+  padding: 20px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.pricing__row-container {
     display: flex;
     flex-direction: column;
+    
 }
 
-.prices-row {
-    border: 1px solid black;
+.pricing__row {
+    border: none;
+    border-radius: 20px;
+    background: #B3EFB2;
+    padding: 2rem;
+    margin: 2rem;
+    width: 20rem;
+    flex-wrap: wrap;
 }
 
 .footer__row {
@@ -88,10 +125,28 @@ article {
 }
 
 @media (min-width:780px) {
-    .header {
+    #header {
         display: flex;
         gap: 1rem;
         justify-content: flex-end;
-
     }
+    #header-img {
+    object-fit: contain;
+    width: 50rem;
+}
+  .pricing__row-container {
+    display:flex;
+    flex-direction: row;
+  }
+  #header-img {
+    object-fit: contain;
+    width: 30rem;
+    margin: 0 auto 3rem -3rem;
+}
+#nav-bar__1 {
+ display: block; 
+}
+#nav-bar__2 {
+  display: none;
+}
 }
