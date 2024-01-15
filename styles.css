@@ -1,46 +1,63 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 2rem;
-    background-color: #E8F1F2;
-    border: none;
-    font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #e8f1f2;
+  border: none;
+  font-family: "Roboto", sans-serif;
 }
 
 #header-img {
-    object-fit: contain;
-    width: 30rem;
-    margin: 0 auto 3rem -3rem;
+  object-fit: contain;
+  width: 30rem;
+  margin: 0 auto 3rem -3rem;
+  background: lightgrey;
+  position: fixed;
+  margin-top: -2rem;
 }
 
-#nav-bar__1,#nav-bar__2 {
-    display: flex;
-    gap: 1rem;
-    font-size: 20px;
+#header-img:hover {
+  cursor: pointer;
 }
 
-#nav-bar__1, #title, #nav-bar__2 {
- margin-bottom: 5rem;
- font-size: 2rem;
+#nav-bar__1,
+#nav-bar__2 {
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
 }
 
-#nav-bar__1 a, #nav-bar__2 a {
-    color: black;
-    text-decoration: none;
+#nav-bar__1,
+#title,
+#nav-bar__2 {
+  margin-bottom: 5rem;
+  font-size: 2rem;
 }
 
-#nav-bar__1 a:hover, #nav-bar__2 a:hover {
-    color: #7A9E7E;
+#nav-bar__1 a,
+#nav-bar__2 a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar__1 a:hover,
+#nav-bar__2 a:hover {
+  color: #e1c16e;
 }
 
 #nav-bar__1 {
   display: none;
 }
+
+#title {
+  font-size: 3rem;
+}
+
 #form {
   font-size: 2rem;
 }
@@ -51,102 +68,137 @@ body {
 }
 
 button {
-  border: 1px solid ;
+  border: 1px solid;
 }
 
 button:hover {
-    cursor: pointer;
-    
+  cursor: pointer;
 }
 
 button:active {
-    background-color: wheat;
-    
+  background-color: wheat;
 }
 
 .hero {
   margin-top: 100vh;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 article {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .article__text {
-    font-size: 0.5em;
-    margin-left: 4em;
+  font-size: 0.5em;
+  margin-left: 4em;
 }
 
 .article__title {
   margin-left: 1.5rem;
-  
 }
 
 iframe {
   padding: 20px;
-    margin: 0 auto;
-    object-fit: contain;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .pricing__row-container {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing__row {
-    border: none;
-    border-radius: 20px;
-    background: #B3EFB2;
-    padding: 2rem;
-    margin: 2rem;
-    width: 20rem;
-    flex-wrap: wrap;
+  border: none;
+  border-radius: 20px;
+  background: #b3efb2;
+  padding: 2rem;
+  margin: 2rem;
+  width: 20rem;
+  flex-wrap: wrap;
 }
 
 .footer__row {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+  display: flex;
+  justify-content: ;
+  gap: 1rem;
 }
 
 .footer__row a {
-    color: black;
-    text-decoration: none;
-
+  color: black;
+  text-decoration: none;
 }
 
 .small {
-    text-align: right;
-
+  justify-content: flex-end;
+  align-self: end;
 }
 
-@media (min-width:780px) {
-    #header {
-        display: flex;
-        gap: 1rem;
-        justify-content: flex-end;
-    }
-    #header-img {
+@media (min-width: 780px) {
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  #header {
+    display: flex;
+  }
+
+  #header-img {
     object-fit: contain;
     width: 50rem;
-}
-  .pricing__row-container {
-    display:flex;
-    flex-direction: row;
   }
+
+  .pricing__row-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+  }
+
   #header-img {
     object-fit: contain;
     width: 30rem;
-    margin: 0 auto 3rem -3rem;
-}
-#nav-bar__1 {
- display: block; 
-}
-#nav-bar__2 {
-  display: none;
-}
+    margin: 0 auto 3rem -2rem;
+    padding-left: -5rem;
+  }
+
+  #nav-bar__1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-bar__2 {
+    display: none;
+  }
+
+  #title {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer__row {
+    justify-content: space-around;
+  }
+
+  .small {
+    justify-content: flex-end;
+    align-self: end;
+  }
+
+  article {
+    max-width: 90%;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
