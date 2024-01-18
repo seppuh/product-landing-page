@@ -22,13 +22,7 @@ body {
 }
 
 #header {
-  position: fixed;
   background: lightgrey;
-}
-
-#header__logo {
-  background: lightgrey;
-  position: fixed;
   z-index: 1;
 }
 
@@ -36,7 +30,6 @@ body {
   cursor: pointer;
 }
 
-#nav-bar__1,
 #nav-bar__2 {
   display: flex;
   gap: 1rem;
@@ -48,15 +41,12 @@ body {
   margin-bottom: 5rem;
   font-size: 2rem;
 }
-
-#nav-bar__1 a,
 #nav-bar__2 a {
   color: black;
   text-decoration: none;
   display: flex;
 }
 
-#nav-bar__1 a:hover,
 #nav-bar__2 a:hover {
   color: #7e6a5d;
 }
@@ -103,6 +93,8 @@ section {
   width: 40rem;
   height: 13rem;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  border: 1px solid black;
+  z-index: -1;
 }
 
 .section__text {
@@ -161,15 +153,30 @@ svg {
     padding-right: 5rem;
   }
 
-  .pricing__row-container {
+  #nav-bar__1 a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #nav-bar__1-menu {
     display: flex;
-    flex-direction: row;
-    margin: 2rem;
+    gap: 1rem;
+  }
+  #header {
+    margin-top: -16px;
+    z-index: 1;
+    position: fixed;
+    width: 90%;
   }
 
   #nav-bar__1 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #title {
+    margin-bottom: ;
   }
 
   #nav-bar__2 {
@@ -203,5 +210,11 @@ svg {
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing__row-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
   }
 }
