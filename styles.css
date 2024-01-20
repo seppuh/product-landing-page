@@ -161,6 +161,7 @@ svg {
   #nav-bar__1-menu {
     display: flex;
     gap: 1rem;
+    margin-right: 8px;
   }
   #header {
     margin-top: -16px;
@@ -173,10 +174,21 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+  }
+  
+  #dot {
+    font-size: 5rem;
+    margin-top: -3.5rem;
+  }
+  
+  main {
+    margin-top: 50vh;
+    text-align: center;
   }
   
   #title {
-    margin-bottom: ;
+    margin-top: 100vh;
   }
 
   #nav-bar__2 {
